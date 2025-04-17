@@ -1,4 +1,22 @@
-h1
+.minorenne
 {
-  background-color: blue;
+  background-color: #03ecfc;
+}
+
+.giovane
+{
+  background-color: #fc0328;
+}
+
+.menoGiovane
+{
+  background-color: #1cff00;
+  font-weight: bold;
+}
+
+.pensionato
+{
+  background-color: brown;
+  font-size: larger;
+  font-weight: bolder;
 }

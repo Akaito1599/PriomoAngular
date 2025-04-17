@@ -25,19 +25,19 @@ export class Pezzettino1Component
     { nome: "Valentina", cognome: "Greco", eta: 85 }
   ];
 
-  decidiColore(p:Persona):string
+  decidiClasse(p:Persona):any
   {
     if(p.eta<18)
-      return '#03ecfc';
-
+      return 'minorenne';
     if(p.eta<30)
-      return '#fc0328';
-
+      return 'giovane';
     if(p.eta<67)
-      return '#1cff00'
+      return 'menoGiovane';
 
-    return '#62350e';
+    return 'pensionato';
   }
+
+
 
   distruggi(p: Persona)
   {

@@ -19,7 +19,7 @@
     <tr *ngFor="let p of persone">
       <td>{{p.nome}}</td>
       <td>{{p.cognome}}</td>
-      <td [style.background-color]="decidiColore(p)">{{p.eta}}</td>
+      <td [class]="decidiClasse(p)">{{p.eta}}</td>
       <td><button (click)="distruggi(p)">DISTRUGGI</button></td>
     </tr>
 
