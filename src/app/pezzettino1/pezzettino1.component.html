@@ -1,0 +1,29 @@
+<!--
+  direttive
+  le riconoscete perchè precedute da un *
+  servono ad applicare logica di base nel html (cicli,if e simili)
+  Uguali a Thymeleaf
+  Voglio mostrare la mia classica tabella con tutte le persone
+-->
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Cognome</th>
+      <th>Eta</th>
+      <th>ELIMINA</th>
+    </tr>
+  </thead>
+  <tbody>
+  <!-- L'html viene ripetuto qua sotto per ogni persona chiamata p dentro array persone-->
+    <tr *ngFor="let p of persone">
+      <td>{{p.nome}}</td>
+      <td>{{p.cognome}}</td>
+      <td [style.background-color]="decidiColore(p)">{{p.eta}}</td>
+      <td><button (click)="distruggi(p)">DISTRUGGI</button></td>
+    </tr>
+
+  </tbody>
+
+
+</table>
