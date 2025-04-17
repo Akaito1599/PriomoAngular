@@ -1,0 +1,19 @@
+<table>
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Titolo</th>
+    <th>Autore</th>
+    <th>Genere</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let b of books">
+    <td>{{b.id}}</td>
+    <td>{{b.title}}</td>
+    <td>{{b.author}}</td>
+    <td>{{b.genre}}</td>
+  </tr>
+
+  </tbody>
+</table>
